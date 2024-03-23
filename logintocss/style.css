@@ -1,12 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    display:  flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: sans-serif;
-
+    display: flex;
+    background: linear-gradient(to bottom, #0f0c29, #302b63,);
 }
 
 .main {
@@ -14,12 +15,13 @@ body {
     height: 480px;
     background: rgb(111, 128, 224);
     overflow: hidden;
+    background: url(image/SE-49dccee4-a259-427b-bc8b-c070b71966f4.jpg) no-repeat center / cover;
     border-radius: 10px;
-    box-shadow: 5px 30px 50px black;
+    box-shadow: 5px 30px 50px #000;
 }
 
 #chk {
-    display: none;    
+    display: flex;
 }
 
 .signup {
@@ -29,8 +31,8 @@ body {
 }
 
 label {
-    color: white;
-    font-size: 35px;
+    color: #fff;
+    font-size: 2.3em;
     justify-content: center;
     display: flex;
     margin: 60px;
@@ -43,14 +45,14 @@ label {
 input {
     width: 60%;
     height: 20px;
-    background: white;
+    background: #e0dede;
     justify-content: center;
     display: flex;
-    margin: 18px auto;
+    margin: 20px auto;
     padding: 10px;
     border: none;
     outline: none;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 button {
@@ -61,19 +63,19 @@ button {
     display: block;
     color: white;
     background: rgb(43, 83, 194);
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
-    margin-top: 18px;
+    margin-top: 20px;
     outline: none;
     border: none;
     border-radius: 10px;
-    transition: .3s ease-in;
+    transition: .2s ease-in;
     cursor: pointer;
     box-shadow: 5px 20px 40px black;
 }
 
 button:hover {
-    background: rgb(20, 57, 105);
+    background: #6d44b8;
 }
 
 .login {
@@ -89,11 +91,6 @@ button:hover {
     transform: scale(.6);
 }
 
-.login p {
-    text-align: center;
-    padding: 20px;
-}
-
 #chk:checked ~ .login {
     transform: translateY(-500px);
 }
@@ -105,3 +102,9 @@ button:hover {
 #chk:checked ~ .signup label {
     transform: scale(.6);
 }
+
+.login p {
+    text-align: center;
+    padding: 20px;
+}
+
