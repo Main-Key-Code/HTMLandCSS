@@ -21,7 +21,7 @@ body {
 }
 
 #chk {
-    display: flex;
+    display: none;
 }
 
 .signup {
