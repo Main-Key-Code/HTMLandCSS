@@ -1,0 +1,51 @@
+<div class="logo"><img src="image/anonymous.png" alt="" width="30px" height="30px"> logo</div>
+<ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+<ul class="login-menu">
+    <li>Sinup</li>
+    <li>Login</li>
+</ul>
+
+<style>
+.navber {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px gray;
+    box-shadow: 2px 2px 35px 2px #8a8a1d;
+    padding: 12px 28px;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+.navber i {
+    color: #8a8a1d;
+}
+
+.navber .menu, .navber .login-menu {
+    display: flex;
+}
+
+.navber ul {
+    list-style: none;
+}
+
+.navber .menu a, .navber .login-menu li {
+    margin-right: 38px;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}    
+</style>
+<script>
+    const li = document.querySelectorAll('.menu li')[0]
+    li.addEventListener('click', (e) => {
+        e.preventDefault()
+        alert('Home')
+        window.location.href = 'index.html'
+    })
+</script>
